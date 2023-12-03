@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # my apps
     'posts',
     "taggit",
+      "django_bootstrap5",
 
 ]
 
