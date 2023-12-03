@@ -1,0 +1,6 @@
+<form method="POST" >
+    {% csrf_token %}
+    <button class="deletebtn show-form-delete" type="submit" value="DELETE" onclick="return confirm('Are you sure do you want to delete {{i.name}}')">
+        <i class="fa fa-trash-o"></i>
+        Delete</button>
+    </form>

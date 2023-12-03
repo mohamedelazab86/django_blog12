@@ -43,8 +43,14 @@ INSTALLED_APPS = [
     'posts',
     "taggit",
       "django_bootstrap5",
+      'rest_framework',
+       'django_filters',
+       'drf_yasg',
 
 ]
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
